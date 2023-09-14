@@ -21,7 +21,7 @@ const AppHeader = () => {
                 d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"
               />
             </svg>
-            <div className="ml-4 uppercase">Jon Tonti</div>
+            <div className="ml-4 uppercase">Todd Garrison</div>
           </div>
         </a>
       </Link>
