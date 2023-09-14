@@ -11,16 +11,16 @@ type WorkPageProps = {
 const Work = ({ commits }: WorkPageProps) => {
   const projects = [
     {
-      site: 'https://losyarumos.com/treehouse/',
-      repo: 'https://github.com/jtontiwith/los-yarumos',
+      site: 'https://sea-to-see.herokuapp.com/',
+      repo: 'https://github.com/ToddLGarrison/sea-to-see',
     },
     {
-      site: 'https://redeslibertad.com/',
-      repo: 'https://github.com/jtontiwith/freedom-networks',
+      site: 'https://www.sourcefiresauce.com/',
+      repo: 'https://github.com/ToddLGarrison',
     },
     {
-      site: 'https://jontonti.com',
-      repo: 'https://github.com/jtontiwith/personal-portfolio',
+      site: 'https://www.toddlgarrison.com/',
+      repo: 'https://github.com/ToddLGarrison/portfolio',
     },
   ]
   const projectsArr = projects.map((p) => (
@@ -61,7 +61,7 @@ Work.getLayout = function getLayout(page: ReactElement) {
 
 export async function getStaticProps() {
   const res = await fetch(
-    'https://api.github.com/users/jtontiwith/events/public'
+    'https://api.github.com/users/ToddLGarrison/events/public'
   )
   const data = await res.json()
   console.log('checkin types here ', data.length)
