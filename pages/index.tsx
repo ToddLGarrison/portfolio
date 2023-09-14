@@ -2,7 +2,6 @@ import Layout from '../src/components/Layout'
 import NestedLayout from '../src/components/nested-layout'
 import loadPosts from '../lib/fetch-posts'
 import AppPostList from '../src/components/AppPostList'
-import Link from 'next/link'
 import AppCommitFeed from '../src/components/AppCommitFeed'
 import { ReactElement } from 'react'
 
@@ -33,22 +32,19 @@ export default function Page({ thoughts, commits }: IndexPageProps) {
         Projects
       </h2>
       {/* <AppPostList items={thoughts} /> */}
-      {/* <Link href={'/thoughts'}>
-        <a className="font-medium text-gray-600">
+      {/* <a href={'/thoughts'} className="font-medium text-gray-600">
           More
           <span className="pl-2">→</span>
-        </a>
-      </Link> */}
+        </className=>
+      </a> */}
       <h2 className="my-10 text-sm font-bold uppercase text-sky-800">
         recent commits
       </h2>
       <AppCommitFeed commits={commits} />
-      <Link href={'/work'}>
-        <a className="font-medium text-gray-600">
-          More
-          <span className="pl-2">→</span>
-        </a>
-      </Link>
+      <a href="/work" className="font-medium text-gray-600">
+        More
+        <span className="pl-2">→</span>
+      </a>
     </div>
   )
 }
