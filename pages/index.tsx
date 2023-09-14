@@ -15,22 +15,30 @@ export default function Page({ thoughts, commits }: IndexPageProps) {
   return (
     <div className="py-20 font-raleway">
       <h1 className="mb-4 font-raleway text-[36px] font-bold">
-        Hello, my name is Jon.
+        Hello, my name is Todd.
       </h1>
       <p className="mb-24 text-2xl text-gray-600 font-libre">
-        I am a Software Engineer based in Salinas, CA. Currently I'm working at
-        Oiga Technologies.
+      Experienced Customer Success Manager and Entrepreneur with over a decade of customer-facing expertise, 
+      eager to transition into Software Engineering. 
+      
+      I learned how to build and ship full-stack software via an immersive training program at Launch Academy 
+      and have continued to hone new skills through personal projects. 
+      
+      My career journey has nurtured my adaptability, problem-solving prowess, and customer-centric focus, 
+      which I use to drive innovation and deliver results in forward-thinking projects 
+      while remaining committed to continuous learning.
       </p>
+
       <h2 className="mb-10 text-sm font-bold uppercase text-sky-800">
-        recent thoughts
+        Projects
       </h2>
-      <AppPostList items={thoughts} />
-      <Link href={'/thoughts'}>
+      {/* <AppPostList items={thoughts} /> */}
+      {/* <Link href={'/thoughts'}>
         <a className="font-medium text-gray-600">
           More
           <span className="pl-2">→</span>
         </a>
-      </Link>
+      </Link> */}
       <h2 className="my-10 text-sm font-bold uppercase text-sky-800">
         recent commits
       </h2>
@@ -69,7 +77,7 @@ export async function getStaticProps() {
 
   //get git commits
   const res = await fetch(
-    'https://api.github.com/users/jtontiwith/events/public'
+    'https://api.github.com/users/ToddLGarrison/events/public'
   )
   const gitData = await res.json()
 
