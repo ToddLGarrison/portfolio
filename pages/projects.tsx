@@ -1,28 +1,28 @@
 import Layout from '../src/components/Layout'
 import loadPosts from '../lib/fetch-posts'
-import AppPostList from '../src/components/AppPostList'
+// import AppPostList from '../src/components/AppPostList'
 import NestedLayout from '../src/components/nested-layout'
 import { ReactElement } from 'react'
 
-type ThoughtsPageProps = {
-  thoughts: object[]
+type ProjectsPageProps = {
+  projects: object[]
 }
 
-const Thoughts = ({ thoughts }: ThoughtsPageProps) => {
+const Projects = ({ projects }: ProjectsPageProps) => {
   return (
     <div className="pt-20 font-raleway">
-      <h1 className="mb-4 font-raleway text-[36px] font-bold">Thoughts</h1>
+      <h1 className="mb-4 font-raleway text-[36px] font-bold">Projects</h1>
       <p className="mb-24 text-2xl text-gray-600 font-libre">
-        Learnings and other miscellaneous musings.
+        Things I am currently working on and ideas upcoming projects.
       </p>
-      <AppPostList items={thoughts} />
+      {/* <AppPostList items={Projects} /> */}
     </div>
   )
 }
 
-export default Thoughts
+export default Projects
 
-Thoughts.getLayout = function getLayout(page: ReactElement) {
+Projects.getLayout = function getLayout(page: ReactElement) {
   return (
     <Layout>
       <NestedLayout>{page}</NestedLayout>
@@ -45,6 +45,6 @@ export async function getStaticProps() {
   )
 
   return {
-    props: { thoughts: items },
+    props: { projects: items },
   }
 }
