@@ -9,7 +9,7 @@ const AppNav = () => {
 
   const links = [
     { name: 'home', path: '/' },
-    { name: 'thoughts', path: '/thoughts' },
+    { name: 'in progress', path: '/projects' },
     { name: 'work', path: '/work' },
   ].map((l, i) => {
     return (
