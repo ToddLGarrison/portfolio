@@ -1,5 +1,9 @@
 # Personal Portfolio Site
 
+Used to show projects from Launch Academy, personal projects, and resume.
+
+# Stack
+
 JavaScript, Next.js, Tailwinds, React
 
 ## How to use
