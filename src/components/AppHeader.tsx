@@ -4,8 +4,7 @@ import AppNav from './AppNav'
 const AppHeader = () => {
   return (
     <header className="flex justify-between py-2 pt-4 text-sm font-bold uppercase">
-      <Link href="/">
-        <a>
+      <a href="/">
           <div className="flex items-center text-base uppercase">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -23,8 +22,7 @@ const AppHeader = () => {
             </svg>
             <div className="ml-4 uppercase">Todd Garrison</div>
           </div>
-        </a>
-      </Link>
+      </a>
       <AppNav />
     </header>
   )

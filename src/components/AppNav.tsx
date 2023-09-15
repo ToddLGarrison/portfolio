@@ -17,9 +17,9 @@ const AppNav = () => {
         className="flex flex-col mr-0 text-sm font-bold text-right uppercase md:mr-10 md:text-center"
         key={i}
       >
-        <Link href={l.path}>
-          <a>{l.name}</a>
-        </Link>
+        <a href={l.path}>
+          {l.name}
+        </a>
         <span className="hidden md:block">{pathname === l.path && dot}</span>
       </div>
     )

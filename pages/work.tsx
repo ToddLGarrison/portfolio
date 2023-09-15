@@ -82,6 +82,6 @@ export async function getStaticProps() {
   )
 
   return {
-    props: { commits },
+    props: { commits: commits.slice(0, 5) },
   }
 }
