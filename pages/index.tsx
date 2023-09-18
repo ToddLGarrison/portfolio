@@ -1,5 +1,5 @@
 import Layout from '../src/components/Layout'
-import NestedLayout from '../src/components/nested-layout'
+import NestedLayout from '../src/components/projects-layout'
 import loadPosts from '../lib/fetch-posts'
 import AppPostList from '../src/components/AppPostList'
 import AppCommitFeed from '../src/components/AppCommitFeed'

@@ -11,16 +11,8 @@ type WorkPageProps = {
 const Work = ({ commits }: WorkPageProps) => {
   const projects = [
     {
-      site: 'https://sea-to-see.herokuapp.com/',
-      repo: 'https://github.com/ToddLGarrison/sea-to-see',
-    },
-    {
       site: 'https://www.sourcefiresauce.com/',
       repo: 'https://github.com/ToddLGarrison',
-    },
-    {
-      site: 'https://www.toddlgarrison.com/',
-      repo: 'https://github.com/ToddLGarrison/portfolio',
     },
   ]
   const projectsArr = projects.map((p) => (
@@ -64,7 +56,7 @@ export async function getStaticProps() {
     'https://api.github.com/users/ToddLGarrison/events/public'
   )
   const data = await res.json()
-  console.log('checkin types here ', data.length)
+  console.log('checking types here ', data.length)
   const commits = data.map(
     (c: {
       type: any
