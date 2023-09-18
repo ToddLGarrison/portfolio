@@ -1,5 +1,6 @@
 import React, { FC } from 'react'
 import AppHeader from '../components/AppHeader'
+import AppFooter from '../components/AppFooter'
 
 interface Props {}
 
@@ -10,6 +11,7 @@ const Layout: FC<Props> = ({ children, ...props }) => {
         {' '}
         <AppHeader />
         {children}
+        <AppFooter />
       </div>
     </>
   )
