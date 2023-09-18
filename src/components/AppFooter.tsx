@@ -13,6 +13,10 @@ const AppFooter = () => {
                     <GitHub />
                 </a>
 
+                <a href="https://drive.google.com/file/d/10K4RwnvrrxBgd0mdIarZu_OZRVkTuh1k/view?usp=sharing"  target="_blank" rel="noopener noreferrer">
+                    <Summarize />
+                </a>
+
                 <a href="mailto:toddlgarrison@gmail.com">
                     <Email />
                 </a>
