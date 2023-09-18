@@ -16,21 +16,21 @@ export default function Page({ thoughts, commits }: IndexPageProps) {
       <h1 className="mb-4 font-raleway text-[36px] font-bold">
         Hello, my name is Todd.
       </h1>
-      <p className="mb-24 text-2xl text-gray-600 font-libre">
-      Experienced Customer Success Manager and Entrepreneur with over a decade of customer-facing expertise, 
-      eager to transition into Software Engineering. 
-      
-      I learned how to build and ship full-stack software via an immersive training program at Launch Academy 
-      and have continued to hone new skills through personal projects. 
-      
-      My career journey has nurtured my adaptability, problem-solving prowess, and customer-centric focus, 
-      which I use to drive innovation and deliver results in forward-thinking projects 
-      while remaining committed to continuous learning.
-      </p>
+      <div className="mb-24 text-2xl text-gray-600 font-libre">
+        <p className='about-paragraph'>
+          Experienced Customer Success Manager and Entrepreneur with over a decade of customer-facing expertise, 
+          eager to transition into Software Engineering. 
+        </p>
+        <p className='about-paragraph'>
+          I learned how to build and ship full-stack software via an immersive training program at Launch Academy 
+          and have continued to hone new skills through personal projects. 
+        </p>
+      </div>
 
-      <h2 className="mb-10 text-sm font-bold uppercase text-sky-800">
+      {/* <h2 className="mb-10 text-sm font-bold uppercase text-sky-800">
         Projects
       </h2>
+      <p>Coming soon</p> */}
       {/* <AppPostList items={thoughts} /> */}
       {/* <a href={'/thoughts'} className="font-medium text-gray-600">
           More
@@ -58,6 +58,7 @@ Page.getLayout = function getLayout(page: ReactElement) {
 }
 
 export async function getStaticProps() {
+
   // get medium posts
   const data = await loadPosts()
   const items = JSON.parse(data).items.map(

@@ -1,3 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.about-paragraph {
+    margin: .7em 0;
+}
