@@ -1,7 +1,6 @@
 import Layout from '../src/components/Layout'
 import NestedLayout from '../src/components/nested-layout'
 import loadPosts from '../lib/fetch-posts'
-import AppPostList from '../src/components/AppPostList'
 import AppCommitFeed from '../src/components/AppCommitFeed'
 import { ReactElement } from 'react'
 
@@ -26,17 +25,7 @@ export default function Page({ thoughts, commits }: IndexPageProps) {
           and have continued to hone new skills through personal projects. 
         </p>
       </div>
-
-      {/* <h2 className="mb-10 text-sm font-bold uppercase text-sky-800">
-        Projects
-      </h2>
-      <p>Coming soon</p> */}
-      {/* <AppPostList items={thoughts} /> */}
-      {/* <a href={'/thoughts'} className="font-medium text-gray-600">
-          More
-          <span className="pl-2">→</span>
-        </className=>
-      </a> */}
+      
       <h2 className="my-10 text-sm font-bold uppercase text-sky-800">
         recent commits
       </h2>
@@ -58,19 +47,6 @@ Page.getLayout = function getLayout(page: ReactElement) {
 }
 
 export async function getStaticProps() {
-
-  // get medium posts
-  const data = await loadPosts()
-  const items = JSON.parse(data).items.map(
-    (item: { title: string; link: string; published: Date }) => {
-      return {
-        title: item.title,
-        link: item.link,
-        published: item.published,
-        // content: item.content,
-      }
-    }
-  )
 
   //get git commits
   const res = await fetch(
@@ -95,6 +71,6 @@ export async function getStaticProps() {
   )
 
   return {
-    props: { thoughts: items.slice(0, 3), commits: commits.slice(0, 3) },
+    props: { commits: commits.slice(0, 3) },
   }
 }

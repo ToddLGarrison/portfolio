@@ -1,4 +1,3 @@
-import Link from 'next/link'
 import AppNav from './AppNav'
 
 const AppHeader = () => {

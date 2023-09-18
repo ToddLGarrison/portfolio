@@ -13,6 +13,9 @@ const Projects = ({ projects }: ProjectsPageProps) => {
     <div className="pt-20 font-raleway">
       <h1 className="mb-4 font-raleway text-[36px] font-bold">Projects</h1>
       <p className="mb-24 text-2xl text-gray-600 font-libre">
+        Coming soon!
+      </p>
+      <p className="mb-24 text-2xl text-gray-600 font-libre">
         Things I am currently working on and ideas upcoming projects.
       </p>
       {/* <AppPostList items={Projects} /> */}

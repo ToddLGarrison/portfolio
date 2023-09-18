@@ -1,5 +1,4 @@
 import { useState } from 'react'
-import { spawn } from 'child_process'
 
 type WebSiteDisplayerProps = {
   siteUrl: string

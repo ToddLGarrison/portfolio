@@ -24,3 +24,16 @@ const AppPostList = ({ items }: PostListProps) => {
 }
 
 export default AppPostList
+
+  // get medium posts
+  // const data = await loadPosts()
+  // const items = JSON.parse(data).items.map(
+  //   (item: { title: string; link: string; published: Date }) => {
+  //     return {
+  //       title: item.title,
+  //       link: item.link,
+  //       published: item.published,
+  //       // content: item.content,
+  //     }
+  //   }
+  // )

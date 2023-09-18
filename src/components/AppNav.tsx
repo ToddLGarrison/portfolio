@@ -1,4 +1,3 @@
-import Link from 'next/link'
 import { useState, useEffect } from 'react'
 import { useRouter } from 'next/router'
 
@@ -9,8 +8,8 @@ const AppNav = () => {
 
   const links = [
     { name: 'home', path: '/' },
-    { name: 'in progress', path: '/projects' },
     { name: 'work', path: '/work' },
+    { name: 'in progress', path: '/projects' },
   ].map((l, i) => {
     return (
       <div
