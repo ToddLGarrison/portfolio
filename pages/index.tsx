@@ -17,12 +17,14 @@ export default function Page({ thoughts, commits }: IndexPageProps) {
       </h1>
       <div className="mb-24 text-2xl text-gray-600 font-libre">
         <p className='about-paragraph'>
-          Experienced Customer Success Manager and Entrepreneur with over a decade of customer-facing expertise, 
-          eager to transition into Software Engineering. 
+        Software Engineer with hands-on experience in building and shipping full-stack software, 
+        coming from a background in Customer Success Management and Entrepreneurship with over a decade of 
+        customer-facing expertise. 
         </p>
         <p className='about-paragraph'>
-          I learned how to build and ship full-stack software via an immersive training program at Launch Academy 
-          and have continued to hone new skills through personal projects. 
+        I studied full-stack software development through an immersive training program at Launch Academy 
+        and have continued to refine my skills through personal projects. Leveraging my adaptability, 
+        problem-solving prowess, and customer-centric focus, I drive innovation and deliver results in forward-thinking projects. 
         </p>
       </div>
       
