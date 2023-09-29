@@ -64,7 +64,6 @@ export async function getStaticProps() {
     'https://api.github.com/users/ToddLGarrison/events/public'
   )
   const data = await res.json()
-  console.log('checkin types here ', data.length)
   const commits = data.map(
     (c: {
       type: any
